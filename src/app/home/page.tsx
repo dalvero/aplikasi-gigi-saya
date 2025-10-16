@@ -1,5 +1,6 @@
 "use client";
 import { Search, Menu, Settings, Video, FileText, Star } from "lucide-react";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -29,11 +30,7 @@ export default function HomePage() {
       {/* KONSULTASI CARD*/}
       <div className="relative bg-emerald-800 rounded-2xl p-5 mb-6 flex items-center justify-between text-white">        
         <div className="bg-emerald-800  flex">          
-          <img
-            src="/images/dokter.png"
-            alt="dokter"
-            className="w-25 h-25 object-contain"
-          />
+           <Image src="/images/dokter.png" alt="dokter" className="w-25 h-25 rounded-lg object-cover mr-3" width={100} height={100} />
           <div className="flex-col pl-10 py-2 items-center justify-center">
             <h2 className="text-xl font-semibold mb-2">Konsultasi</h2>
             <p className="text-sm text-white/80">
@@ -82,11 +79,7 @@ export default function HomePage() {
             key={item}
             className="flex items-center bg-white rounded-xl border border-gray-400 shadow-sm p-3"
           >
-            <img
-              src="/images/artikel_anak.png"
-              alt="artikel"
-              className="w-20 h-20 rounded-lg object-cover mr-3"
-            />
+            <Image src="/images/artikel_anak.png" alt="artikel" className="w-25 h-25 rounded-lg object-cover mr-3" width={120} height={120} />
             <div className="flex-1">
               <h4 className="text-sm font-semibold text-dark leading-snug">
                 Anak sering mual muntah tiap sikat gigi? Ini tandanya.
