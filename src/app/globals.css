@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #949191;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #949191;
     --foreground: #ededed;
   }
 }
@@ -23,24 +23,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Tambahan gaya dasar untuk kenyamanan baca dan responsif */
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Utility kecil untuk container lebar maksimal */
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1200px;
 }
