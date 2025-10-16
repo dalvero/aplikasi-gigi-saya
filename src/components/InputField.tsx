@@ -1,7 +1,19 @@
-export default function InputField({ label, placeholder, type = "text" }) {
+type InputFieldProps = {
+  label: string;
+  placeholder?: string;
+  type?: string;
+};
+
+export default function InputField({
+  label,
+  placeholder = "",
+  type = "text",
+}: InputFieldProps) {
   return (
     <div>
-      <label className="block text-sm font-medium text-grey mb-1">{label}</label>
+      <label className="block text-sm font-medium text-grey mb-1">
+        {label}
+      </label>
       <input
         type={type}
         placeholder={placeholder}
